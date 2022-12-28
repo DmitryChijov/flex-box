@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+
+li {
+    list-style: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+
+div:not(.body, .arrow-line, .arrow-line-left, .arrow-line-right) {
+    border: 2px solid #000;
+    border-radius: 35px;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+span {
+    position: fixed;
+}
+
+
+
+.body {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 250px;
+}
+
+
+.second-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 250px;
+    margin-left: -240px;
+}
+
+.third-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 250px;
+}
+
+/* стилизация стрелок */
+
+.big-arrow {
+    margin-top: -135px;
+    font-size: 50px;
+}
+
+.small-arrow {
+    margin-top: -118px;
+    font-size: 35px;
+}
+
+.arrow-line {
+    border-top: 2px solid #000;
+    width: 100px;
+    margin-top: -140px;
+}
+
+.arrow-line-left {
+    border-top: 2px solid #000;
+    width: 75%;
+    margin-top: -140px;
+    margin-right: -73px;
+}
+
+.arrow-line-right {
+    border-top: 2px solid #000;
+    width: 75px;
+    margin-top: -140px;
+    margin-left: -73px;
+}
+
+/* стилизация подсветки вложенности*/
+
+.block-a:hover {
+    background-color :#f3f3ed;
+}
+
+.block-a:hover div {
+    background-color: #f3f3ed;
+}
+
+.block-b:hover {
+    background-color: #f3f3ed;
+}
+
+.block-b:hover .block-b-nested {
+    background-color: #f3f3ed;
+}
+
+.nested-parent:hover {
+    background-color: #dadad5 !important;
+}
+
+.nested-parent:hover .nested-parent-one{
+    background-color: #dadad5;
+}
+
+.pi:hover {
+    background-color: #aeaeaa !important;
+}
+
+.pi:hover div {
+    background-color: #aeaeaa;
+}
+
+.block-c:hover {
+    background-color:#f3f3ed;
+}
+
+.block-c:hover .block-c-nested {
+    background-color: #f3f3ed;
+}
+
+.nested-60:hover {
+    background-color: #dadad5 !important;
+}
+
+.nested-60:hover div {
+    background-color: #dadad5;
+}

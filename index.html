@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Flexbox</title>
+</head>
+<body>
+    <div class="body">
+
+<!-- блок А -->
+        
+        <div class="block-a"><span>A</span>
+            <ul class="first-row">
+                <li><div><span>2</span><span class="small-arrow">&#8595;</span><div class="arrow-line-left"></div></div></li>
+                <li><div><span>4</span><span class="big-arrow">&#8595;</span><div class="arrow-line"></div></div></li>
+                <li><div><span>6</span><span class="small-arrow">&#8595;</span><div class="arrow-line-right"></div></div></li>
+            </ul>
+        </div>
+        
+        
+
+<!-- блок В -->
+        <div class="block-b"><span>B</span>
+            <ul class="first-row">
+                <li><div class="block-b-nested"><span>1</span><span class="small-arrow">&#8595;</span><div class="arrow-line-left"></div></div></li>
+                <li><div class="block-b-nested"><span>3</span><span class="big-arrow">&#8595;</span><div class="arrow-line"></div></div></li>
+                <li>
+                    
+                    <div class="block-b-nested nested-parent"><span>10</span><span class="small-arrow">&#8595;</span><span class="arrow-line-right"></span>
+                        <ul class="second-row">
+                            <li><div class="nested-parent-one"><span>70</span><span class="small-arrow">&#8595;</span><div class="arrow-line-left"></div></div></li>
+                            <li>
+                                <div class="nested-parent-one pi"><span>PI</span><span class="small-arrow">&#8595;</span><span class="arrow-line"></span>
+                                    <ul class="third-row">
+                                        <li><div><span>Test</span><span class="small-arrow">&#8595;</span><div class="arrow-line-left"></div></div></li>
+                                        <li><div><span>Foo</span><span class="big-arrow">&#8595;</span><div class="arrow-line"></div></div></li>
+                                        <li><div><span>Bar</span><span class="small-arrow">&#8595;</span><div class="arrow-line-right"></div></div></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li><div class="nested-parent-one"><span>Segma</span><span class="big-arrow">&#8595;</span><div class="arrow-line-right"></div></div></li>
+                        </ul>
+                    </div>
+
+                </li>
+
+                    
+
+                
+            </ul>
+        </div>
+
+<!-- блок С -->
+        <div class="block-c"><span>C</span>
+            <ul class="first-row">
+
+                <li><div class="block-c-nested"><span>50</span><span class="small-arrow">&#8595;</span><div class="arrow-line-left"></div></div></li>
+                <li>
+                    <div class="block-c-nested nested-60"><span>60</span><span class="big-arrow">&#8595;</span><span class="arrow-line"></span>
+                        <ul class="first-row">
+                            <li><div><span>Alpha</span><span class="small-arrow">&#8595;</span><div class="arrow-line-left"></div></div></li>
+                            <li><div><span>3</span><span class="big-arrow">&#8595;</span><div class="arrow-line"></div></div></li>
+                            <li><div><span>Zeta</span><span class="small-arrow">&#8595;</span><div class="arrow-line-right"></div></div></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><div class="block-c-nested"><span>70</span><span class="small-arrow">&#8595;</span><div class="arrow-line-right"></div></div></li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>
